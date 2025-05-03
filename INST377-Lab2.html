@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+            font-family: cursive;
+        }
+
+        .contactInfo label {
+            display: block;
+            font-size: 20px;
+        }
+
+        .contactInfo input[type="text"],
+        .contactInfo input[type="email"] {
+            width: 70%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 18px;
+            background-color: azure;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .contactInfo input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .contactInfo input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+
+    </style>
+</head>
+<body>
+    <h1>Trade your email with the gang :))</h1>
+
+    <form name="contactForm" method="get" action="INST377-Lab2-TY.html">
+        <div class="contactInfo">
+            <!-- Optional Info -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <!-- Emails -->
+            <label for="email">* Enter primary email: </label>
+            <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+            
+            <label for="backupEmail">(Optional) Backup email: </label>
+            <input type="email" id="backupEmail" name="backupEmail">
+            
+            <input type="submit" value="Submit Here">
+        </div>
+    </form>
+</body>
+</html>
+
